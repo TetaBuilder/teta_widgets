@@ -389,6 +389,7 @@ class FActionElement extends Equatable {
         'aW': convertValueToDropdown(actionWebView),
         'aAP': convertValueToDropdown(actionAudioPlayer),
         'aRC': convertValueToDropdown(actionRevenueCat),
+        'sPK':convertValueToDropdown(actionStripe),
         'sN': stateName,
         'pTS': paramsToSend,
         'pN': nameOfPage,
