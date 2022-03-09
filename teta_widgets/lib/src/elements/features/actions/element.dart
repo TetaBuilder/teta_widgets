@@ -351,6 +351,9 @@ class FActionElement extends Equatable {
     if (type == ActionType.revenueCat) {
       return 'RevenueCat';
     }
+    if (type == ActionType.stripe) {
+      return 'Stripe';
+    }
     if (type != null) {
       return EnumToString.convertToString(type, camelCase: true);
     }
@@ -363,6 +366,9 @@ class FActionElement extends Equatable {
   ) {
     if (value == 'RevenueCat') {
       return ActionType.revenueCat;
+    }
+     if (value == 'Stripe') {
+      return ActionType.stripe;
     }
     if (value != null) {
       return EnumToString.fromString<dynamic>(list, value, camelCase: true);

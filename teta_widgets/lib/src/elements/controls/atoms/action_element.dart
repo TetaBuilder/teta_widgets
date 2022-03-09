@@ -694,7 +694,7 @@ class ActionElementControlState extends State<ActionElementControl> {
                   },
                 ),
 
-if (widget.element.actionType == ActionType.stripe)
+              if (widget.element.actionType == ActionType.stripe)
                 CDropdown(
                   value: FActionElement.convertValueToDropdown(
                     widget.element.actionStripe,
@@ -714,7 +714,7 @@ if (widget.element.actionType == ActionType.stripe)
                     }
                   },
                 ),
-              
+
               if (widget.element.actionType == ActionType.navigation)
                 CDropdown(
                   value: FActionElement.convertValueToDropdown(
