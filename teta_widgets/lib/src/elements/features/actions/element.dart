@@ -244,6 +244,7 @@ class FActionElement extends Equatable {
           if (config.supabaseEnabled ?? false) 'Supabase auth',
           if (config.supabaseEnabled ?? false) 'Supabase database',
           if (config.isRevenueCatEnabled) 'RevenueCat',
+          if (config.isStripeEnabled) 'Stripe',
           if ((page.flatList ?? <CNode>[]).indexWhere(
                 (final element) => element.intrinsicState.type == NType.camera,
               ) !=
