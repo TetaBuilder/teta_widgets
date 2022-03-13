@@ -23,6 +23,7 @@ abstract class CTemplate extends Equatable {
   @override
   List<Object?> get props => [
         name,
+        type,
       ];
 
   /// Transform nodes to json

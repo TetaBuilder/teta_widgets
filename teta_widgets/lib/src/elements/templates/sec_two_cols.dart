@@ -1,4 +1,4 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 // Package imports:
 import 'package:mobile_editor/src/elements/features/children_ids.dart';
@@ -235,4 +235,4 @@ class TempSectionTwoCols extends CTemplate {
     return map;
   }
 }
-*/
+
