@@ -420,6 +420,8 @@ NodeBody getBody(final NType type) {
       break;
     case NType.expansionPanel:
       break;
+    case NType.mapBox:
+      break;
   }
   return NodeBody();
 }

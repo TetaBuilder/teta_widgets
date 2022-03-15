@@ -1,5 +1,6 @@
 // Package imports:
 import 'package:equatable/equatable.dart';
+import 'package:teta_widgets/src/elements/index.dart';
 
 /// This class is for group of nodes
 /// e.g. a completed form with textfield, input widgets and button.
@@ -17,15 +18,12 @@ abstract class CTemplate extends Equatable {
   /// type of the template
   String? type;
 
+  // list of NTypes
+  List<NType> listNodes();
+
   @override
   String toString() => 'Default Template { }';
 
   @override
-  List<Object?> get props => [
-        name,
-        type,
-      ];
-
-  /// Transform nodes to json
-  Map<String, dynamic> toJson() => <String, dynamic>{};
+  List<Object?> get props => [name, type];
 }

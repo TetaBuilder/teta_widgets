@@ -367,7 +367,7 @@ class FActionElement extends Equatable {
     if (value == 'RevenueCat') {
       return ActionType.revenueCat;
     }
-     if (value == 'Stripe') {
+    if (value == 'Stripe') {
       return ActionType.stripe;
     }
     if (value != null) {
@@ -396,7 +396,7 @@ class FActionElement extends Equatable {
         'aW': convertValueToDropdown(actionWebView),
         'aAP': convertValueToDropdown(actionAudioPlayer),
         'aRC': convertValueToDropdown(actionRevenueCat),
-        'sPK':convertValueToDropdown(actionStripe),
+        'sPK': convertValueToDropdown(actionStripe),
         'sN': stateName,
         'pTS': paramsToSend,
         'pN': nameOfPage,
@@ -1349,6 +1349,8 @@ class FActionElement extends Equatable {
         break;
       case ActionType.firebaseStorage:
         break;
+      case ActionType.map:
+        break;
     }
   }
 
@@ -1944,6 +1946,9 @@ class FActionElement extends Equatable {
       case ActionType.firebaseFirestore:
         break;
       case ActionType.firebaseStorage:
+        break;
+      case ActionType.map:
+        // TODO: Handle this case.
         break;
     }
     return '';
