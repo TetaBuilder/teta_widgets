@@ -82,6 +82,7 @@ import 'package:teta_widgets/src/elements/bodies/overflowbox.dart';
 import 'package:teta_widgets/src/elements/bodies/padding.dart';
 import 'package:teta_widgets/src/elements/bodies/page_view.dart';
 import 'package:teta_widgets/src/elements/bodies/parallax.dart';
+import 'package:teta_widgets/src/elements/bodies/pdf_viewer.dart';
 import 'package:teta_widgets/src/elements/bodies/placeholder.dart';
 import 'package:teta_widgets/src/elements/bodies/positioned.dart';
 import 'package:teta_widgets/src/elements/bodies/qr.dart';
@@ -221,6 +222,7 @@ final stateTypes = <IntrinsicStates>[
   cameraIntrinsicStates,
   webviewIntrinsicStates,
   audioPlayerIntrinsicStates,
+  pdfViewerIntrinsicState,
   supabaseLoggedUserIntrinsicStates,
   httpRequestFutureBuilderIntrinsicStates,
   cupertinoSegmentedControlIntrinsicStates,
@@ -310,6 +312,8 @@ NodeBody getBody(final NType type) {
       return LineIconBody();
     case NType.ignorePointer:
       return IgnorePointerBody();
+    case NType.pdfViewer:
+      return PdfViewerBody();
     case NType.image:
       return ImageBody();
     case NType.liquidSwipe:

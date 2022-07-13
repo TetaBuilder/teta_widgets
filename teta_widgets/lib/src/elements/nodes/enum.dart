@@ -22,6 +22,7 @@ enum NType {
   gridViewBuilder,
   hero,
   icon,
+  pdfViewer,
   ignorePointer,
   image,
   liquidSwipe,

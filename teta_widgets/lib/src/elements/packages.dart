@@ -138,6 +138,11 @@ const PackageModel pUrlLauncher = PackageModel(
   isDart: false,
   customPath: "import 'package:url_launcher/url_launcher_string.dart';",
 );
+const PackageModel pAdvancedPdfViewer = PackageModel(
+  packageName: 'advance_pdf_viewer',
+  packageVersion: '2.0.1',
+  isDart: false,
+);
 //todo: optimize later - unused - right now is a default import
 const PackageModel pIO = PackageModel(
   packageName: 'io',

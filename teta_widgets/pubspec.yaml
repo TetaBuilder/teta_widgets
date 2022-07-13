@@ -84,6 +84,7 @@ dependencies:
   qr_flutter: 4.0.0
   barcode: 2.1.0
   barcode_widget: 2.0.1
+  advance_pdf_viewer: 2.0.1
 
   # Utils
   uuid: 3.0.6
